@@ -15,7 +15,6 @@ var obj = {
     },
     render: function() {
         var productsList = document.getElementById('productsList');
-        var series = document.getElementById('series');
         var products = this.data.products;
         var str = '';
         var str1 = '';
@@ -41,7 +40,6 @@ var obj = {
             str1 += `<li>${ item.category }</li>`;
             });
             productsList.innerHTML = str;
-            series.innerHTML = str1;
         }
     }
 
